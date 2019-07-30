@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" >
+<meta name="description" content="Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Cras a mattis ligula, a aliquet dolor.">
+<meta name="keywords" content="habitasse, platea, dictumst, Nullam, litora">
+<title>Home</title>
+<link href="css/fontawesome-all.css" rel="stylesheet" type="text/css" />
+<link href="css/site.css" rel="stylesheet" type="text/css" />
+<link href="css/site_m.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="index">
+<!-- header -->
+<header>
+    <!-- header-left -->
+    <div class="header-left">
+        <img src="images/logo.png" alt="Stamp logo" class="logo">
+    </div>
+    <!-- /header-left -->
+
+    <!-- header-middle -->
+    <div class="header-middle" id="header-menu">
+        <ul class="header-menu">
+            <li><a href="#" title="About">About</a></li>
+            <li><a href="#" title="Integrations">Integrations</a></li>
+            <li><a href="#" title="Pricing">Pircing</a></li>
+            <li><a href="#" title="Contacts">Contacts</a></li>
+        </ul>
+    </div>
+    <!-- /header-middle -->
+
+    <!-- header-right -->
+    <div class="header-right">
+        <i class="fas fa-bars" id="menu-btn" onclick="showMenu('header-menu');"></i>
+    </div>
+    <!-- /header-right -->
+</header>
+<!-- /header-->
+
+<!-- main -->
+<main>
+    <!-- main-container -->
+    <div class="main-container index">
+        <!-- col2 -->
+        <div class="col2">
+            <h2>Simple Way to Organize Your Inspirations</h2>
+            <p>I think what motivates people is not great hate, but great love for other people.</p>
+        </div>
+        <!-- /col2 -->
+
+        <!-- col2 -->
+        <div class="col2">
+            <!-- form -->
+            <form class="index">
+                <p>Sign Up For Free</p>
+                <fieldset>
+                    <input type="text" placeholder="Name" name="name" tabindex="1">
+                    <input type="text" placeholder="E-mail" name="email" tabindex="2">
+                    <input type="password" placeholder="Password" name="password" tabindex="3">
+                    <button type="submit">Sign up <i class="fas fa-chevron-right"></i></button>
+                </fieldset>
+                <p>By clicking "Sign up" I agree to our <br> <a href="#">Terms of Service.</a></p>
+            </form>
+            <!-- /form-->
+        </div>
+        <!-- /col2 -->
+    </div>
+    <!-- /main-container-->
+</main>
+<!-- /main -->
+
+<!-- footer -->
+<footer>
+    <!-- footer-left -->
+    <div class="footer-left">
+        <p>&copy; 2016 Stamp. All Rights Reserved</p>
+    </div>
+    <!-- /footer-left -->
+    
+    <!-- footer-right -->
+    <div class="footer-right">
+        <ul class="footer-menu">
+            <li><a href="#" title="Contact">Contact</a></li>
+            <li><a href="#" title="Help">Help</a></li>
+            <li><a href="#" title="Terms of Use">Terms of Use</a></li>
+            <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
+        </ul>
+    </div>
+    <!-- /footer-right -->
+</footer>
+<!-- /footer -->
+
+<!-- script -->
+<script>
+function showMenu(id) {
+    var e = document.getElementById(id);
+    if(e.style.display == 'block')
+       e.style.display = 'none';
+    else
+       e.style.display = 'block';
+ }
+</script>
+<!-- /script -->
+</body>
+</html>
