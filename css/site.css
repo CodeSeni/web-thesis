@@ -1,0 +1,283 @@
+@charset "UTF-8";
+@import url(fonts.css);
+
+/* ======================================================
+RESET DEFAULT STYLES
+====================================================== */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* ======================================================
+BASICS
+====================================================== */
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+html, body {
+    width: 100%;
+    min-width: 992px;
+	height: 100%;
+    background: #ffffff;
+    color: #555555;
+    font-size: 1rem;
+    font-family: 'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    z-index: 999;
+}
+body.index {
+    background-image: url("../images/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+p {
+    margin-bottom: 15px;
+}
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover {
+	color: #2c99ed;
+}
+
+/* ======================================================
+FORM ELEMENTS
+====================================================== */
+fieldset {
+    overflow: hidden;
+}
+input[type="text"], input[type="password"], button[type="submit"] {
+    display: block;
+    color: #ffffff;
+    font-size: 1rem;
+    font-family: 'Roboto-Regular', Arial, Verdana, Helvetica, sans-serif;
+	border: 1px solid transparent; /* Clear default styles */
+	-webkit-appearance: none; /* disable Safari default styles */
+}
+input[type="text"], input[type="password"]{
+	box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    background: rgba(0, 0, 0, 0.4);
+}
+button[type="submit"] {
+    background-color: #2c99ed;
+	padding: 15px;
+	width: 100px;
+    cursor: pointer;
+    -webkit-transition: all 0.20s ease-in-out;
+  	-moz-transition: all 0.20s ease-in-out;
+ 	-ms-transition: all 0.20s ease-in-out;
+  	-o-transition: all 0.20s ease-in-out;
+}
+button[type="submit"]:hover {
+    background-color: #ffffff;
+    color: #2c99ed;
+}
+/* Chrome, Firefox, Opera, Safari 10.1+ */
+::placeholder { 
+    color: #ffffff;
+    opacity: 1; /* Firefox */
+}
+/* Internet Explorer 10-11 */
+:-ms-input-placeholder { 
+    color: #ffffff;
+}
+ /* Microsoft Edge */
+::-ms-input-placeholder {
+    color: #ffffff;
+}
+/* ======================================================
+CONTAINERS
+====================================================== */
+header, main, footer {
+    overflow: hidden;
+    clear: both;
+}
+header {
+    padding: 25px 25px;
+    z-index: 998;
+}
+.header-left, .header-middle, .header-right {
+    float: left;
+}
+.header-left {
+    width: 15%;
+    min-width: 150px;
+}
+.header-middle {
+    width: 75%;
+    padding-top: 10px;
+}
+.header-right {
+    width: 10%;
+    padding-top: 7px;
+    text-align: right;
+}
+footer {
+    padding: 25px 0;
+    color: #ffffff;
+    font-size: 90%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 997;
+}
+footer p {
+    margin-bottom: 0;
+}
+.footer-left {
+    float: left;
+    width: 40%;
+    padding-left: 25px;
+}
+.footer-right {
+    float: right;
+    width: 55%;
+    padding-right: 25px;
+    text-align: right;
+}
+.main-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 3rem 0;
+    clear: both;
+    overflow: hidden;
+}
+.main-container.index {
+    color: #ffffff;
+    padding: 10% 0;
+}
+.col2 {
+    width: 45%;
+}
+.col2:first-of-type {
+    float: left;
+}
+.col2:last-of-type {
+    float: right;
+}
+/* ======================================================
+MENU STYLES
+====================================================== */
+ul.header-menu, ul.footer-menu {
+    font-family: 'Roboto-Medium', Arial, Verdana, Helvetica, sans-serif;
+}
+ul.header-menu {
+    text-align: center;
+    font-size: 1.25rem;
+}
+ul.footer-menu {
+    text-transform: uppercase;
+}
+ul.header-menu li, ul.footer-menu li {
+    display: inline;
+}
+ul.header-menu li {
+    padding-right: 40px;
+}
+ul.header-menu li:last-of-type {
+    padding-right: 0;
+}
+ul.footer-menu li {
+    padding-right: 30px;
+}
+ul.footer-menu li:last-of-type {
+    padding-right: 0;
+}
+#menu-btn {
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+/* ======================================================
+PAGE STYLES
+====================================================== */
+.main-container.index h2 {
+    font-size: 5rem;
+    font-family: 'Roboto-Bold', Arial, Verdana, Helvetica, sans-serif;
+    line-height: 125%;
+    margin-bottom: 30px;
+}
+.main-container.index .col2:first-of-type p {
+    font-size: 1.5rem;
+    line-height: 135%;
+}
+form.index {
+    max-width: 500px;
+}
+form.index fieldset {
+    border: 2px solid #bbbbbb;
+    -webkit-border-radius: 3px; 
+    -moz-border-radius: 3px; 
+    border-radius: 3px; 
+    margin: 2.5rem 0;
+}
+form.index p {
+    text-align: center;
+}
+form.index p:first-of-type {
+    font-family: 'Roboto-Medium', Arial, Verdana, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+form.index p:last-of-type {
+    margin-top: 2.5rem;
+    line-height: 150%;
+}
+form.index fieldset button[type="submit"] {
+    width: 100%;
+}
+form.index fieldset input[type="text"] {
+    border-bottom: 2px solid #bbbbbb;
+}
+form.index fieldset button {
+    font-family: 'Roboto-Medium', Arial, Verdana, Helvetica, sans-serif;
+}
+form.index fieldset button i {
+    font-size: 0.85rem;
+}
+
