@@ -1,3 +1,0 @@
-1. I think font style should be consistent, for example, the header menu and the footer menu. It's better to have both menu items to be all caps or capitalized. The text above the form "SIGN UP FOR FREE" is the only all caps copy on the page and it's not a heading, based on the web accessibility guideline, using all caps only when necessary.
-
-2. I think the mobile menu (bar menu) is not necessary when it's on the large screen devices. If more links are needed, create a drop-down menu from the main menu items. Combine all header menus into the mobile menu or take out the mobile menu on desktop version, this way, users only see two menus (header and footer) for the site.
