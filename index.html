@@ -9,13 +9,14 @@
 <link href="css/fontawesome-all.css" rel="stylesheet" type="text/css" />
 <link href="css/site.css" rel="stylesheet" type="text/css" />
 <link href="css/site_m.css" rel="stylesheet" type="text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 </head>
 <body class="index">
 <!-- header -->
 <header>
     <!-- header-left -->
     <div class="header-left">
-        <img src="images/logo.png" alt="Stamp logo" class="logo">
+        <img src="images/logo_site_white.png" alt="Site logo" class="logo">
     </div>
     <!-- /header-left -->
 
@@ -32,7 +33,7 @@
 
     <!-- header-right -->
     <div class="header-right">
-        <i class="fas fa-bars" id="menu-btn" onclick="showMenu('header-menu');"></i>
+        <i class="fas fa-bars" id="menu-btn"></i>
     </div>
     <!-- /header-right -->
 </header>
@@ -74,7 +75,7 @@
 <footer>
     <!-- footer-left -->
     <div class="footer-left">
-        <p>&copy; 2016 Stamp. All Rights Reserved</p>
+        <p>&copy; 2019 Chenxin Lin Web Project. All Rights Reserved</p>
     </div>
     <!-- /footer-left -->
     
@@ -83,7 +84,6 @@
         <ul class="footer-menu">
             <li><a href="#" title="Contact">Contact</a></li>
             <li><a href="#" title="Help">Help</a></li>
-            <li><a href="#" title="Terms of Use">Terms of Use</a></li>
             <li><a href="#" title="Privacy Policy">Privacy Policy</a></li>
         </ul>
     </div>
@@ -91,15 +91,23 @@
 </footer>
 <!-- /footer -->
 
-<!-- script -->
+<!-- /script -->
 <script>
-function showMenu(id) {
-    var e = document.getElementById(id);
-    if(e.style.display == 'block')
-       e.style.display = 'none';
-    else
-       e.style.display = 'block';
- }
+$(document).ready(function () {
+    'use strict';
+
+    $('#menu-btn').click(function () {
+        if ($('.header-middle').hasClass('active')) {
+            $(this).removeClass("fa-times");
+            $(this).addClass("fa-bars");
+            $('.header-middle').removeClass('active');
+        } else {
+            $(this).removeClass("fa-bars");
+            $(this).addClass("fa-times");
+            $('.header-middle').addClass('active');
+        }
+    });
+});
 </script>
 <!-- /script -->
 </body>
